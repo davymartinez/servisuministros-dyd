@@ -1,0 +1,51 @@
+---
+import Service from "../cards/Service.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section id="services">
+    <Container className="space-y-10 md:sapce-y-12">
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <Title>
+                Nuestros servicios
+            </Title>
+            <Paragraph>
+                Brindamos soluciones de alta calidad en las siguientes áreas:
+            </Paragraph>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <Service title="Consultoría, soporte y servicio técnico TI" description="Asesoramiento, servicio técnico y orientación de expertos para todas sus necesidades de TI, redes y telecomunicaciones, mejorando la eficiencia y maximizando la productividad de su empresa, hogar u oficina.">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+            <Service title="Contabilidad y consultorías financieras" description="Servicios profesionales de consultoría financiera para ayudarle a tomar decisiones informadas y lograr el éxito financiero. Mantenga en orden su contabilidad personal o de su empresa, ¡evite multas!">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+            <Service title="Diseño gráfico y publicidad" description="Soluciones de diseño creativas e innovadoras que potencian su marca y cautivan a su público objetivo.">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+            <br />
+            <Service title="Tienda en línea" description="Descubra la comodidad de comprar desde su hogar con nuestra tienda online. Explore una amplia variedad de productos, ofertas exclusivas y una experiencia de compra sin igual.">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+        </div>
+    </Container>
+</section>
